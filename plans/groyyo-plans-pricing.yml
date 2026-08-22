@@ -1,0 +1,17 @@
+generated: '2026-08-22'
+method: searched
+source: https://groyyo.com/ (Next.js route manifest + every published route, 2026-08-22)
+plan_count: 0
+plans: []
+note: >-
+  Groyyo publishes no pricing or plans page of any kind. The site's own Next.js
+  build manifest enumerates every route it serves — /, /about, /brands,
+  /collections/[slug]/[id], /consulting, /contact-us, /fabric, /factory,
+  /get-in-touch, /investors-relations, /jobs, /kyc, /kyc-login, /privacy-policy,
+  /rfq — and there is no /pricing, /plans or /packages route; a direct probe of
+  https://groyyo.com/pricing returns 404. Commercial engagement runs through the
+  RFQ form (https://groyyo.com/rfq) and the get-in-touch form, i.e. a sales-led
+  quote model with no published rate card, and there is no API product to price.
+evidence:
+- {url: 'https://groyyo.com/rfq', status: 200, note: request-for-quote intake, no prices}
+- {url: 'https://groyyo.com/get-in-touch', status: 200, note: sales contact form}

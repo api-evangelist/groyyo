@@ -1,0 +1,15 @@
+generated: '2026-08-22'
+method: searched
+source: https://groyyo.com/ and every host named in apis.yml (2026-08-22)
+limit_count: 0
+rate_limits: []
+note: >-
+  No rate limits are documented because Groyyo publishes no API. There is no
+  developer portal, no API reference and no machine-readable contract on any
+  host the company controls, so there is no documented quota, window, burst,
+  RateLimit-* / X-RateLimit-* response header or 429 behaviour to record. This
+  is an honest zero, not an unchecked field.
+evidence:
+- {url: 'https://developer.groyyo.com/', status: 404}
+- {url: 'https://docs.groyyo.com/', status: 404}
+- {url: 'https://api.groyyo.com/', status: 404}

@@ -1,17 +1,33 @@
 aid: groyyo
 name: Groyyo
-description: 'Groyyo is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Groyyo is a Gurugram, India based B2B manufacturing and supply-chain
+  company for the fashion, apparel and lifestyle industry, founded in July 2021 by
+  Subin Mitra and Pratik Tiwari. It connects global brands with a vetted network of
+  small and mid-sized Asian factories and gives those factories production software
+  — sales-order management, bill-of-materials creation, production tracking, quality
+  control and business reporting — delivered as the Groyyo and Groyyo + mobile apps
+  and an internal factory ERP rather than as a public developer platform. The company
+  also runs sourcing, fabric and consulting lines, plus RFQ and supplier-KYC intake
+  on its own website. As of August 2026 Groyyo publishes no developer portal, no API
+  documentation and no machine-readable API contract on any host it controls.'
+image: https://groyyo.com/images/logo-black.png
 url: https://raw.githubusercontent.com/api-evangelist/groyyo/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-22'
 modified: '2026-08-22'
 tags:
 - Company
+- Manufacturing
+- Supply Chain
+- Apparel
+- Fashion
+- Sourcing
+- B2B
+- ERP
+- Quality Control
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,45 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/groyyo-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://groyyo.com/
+- type: PrivacyPolicy
+  url: https://groyyo.com/privacy-policy
+- type: Support
+  url: https://groyyo.com/contact-us
+- type: Login
+  url: https://groyyo.com/kyc-login
+- type: LLMsTxt
+  url: llms/groyyo-llms.txt
+x-enrichment:
+  date: '2026-08-22'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Groyyo builds real software — the Groyyo + factory-management Android app and
+    an internal factory ERP — but ships it only as apps to contracted brands and
+    factories, with no developer program behind it: developer.groyyo.com,
+    docs.groyyo.com and api.groyyo.com all 404, the site's own Next.js route
+    manifest lists no /developers, /docs or /api route, and every /.well-known/
+    and spec path (openapi.json, swagger.json, /graphql, agent-card.json) returns
+    a true 404 verified against a bogus control path.
+  evidence:
+  - url: https://developer.groyyo.com/
+    status: 404
+  - url: https://docs.groyyo.com/
+    status: 404
+  - url: https://api.groyyo.com/
+    status: 404
+  - url: https://groyyo.com/openapi.json
+    status: 404
+  - url: https://groyyo.com/.well-known/agent-card.json
+    status: 404
+  - url: https://groyyo.com/
+    status: 200
+  checked: '2026-08-22'

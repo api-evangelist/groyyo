@@ -1,0 +1,38 @@
+generated: '2026-08-22'
+method: probed
+source: live GET probes of every host named in apis.yml (2026-08-22)
+note: >-
+  Every /.well-known/ path probed on groyyo.com returned HTTP 404 with the site's
+  own Next.js 404 body (4,159 bytes), including a deliberately bogus control path
+  that returned the identical 404 — so this host is NOT a soft-200 catch-all, it
+  is an honest absence. No document was fetched and none was saved, therefore NO
+  WellKnown and NO SecurityTxt pointer is emitted in apis.yml. Groyyo runs on a
+  wildcard-DNS Vercel deployment: api., apis., erp., portal., kyc., plus. and
+  gateway.groyyo.com all resolve in DNS but every one answers Vercel's 404
+  ("The deployment could not be found", 107 bytes text/plain), so none of them is
+  a real host and none was probed further.
+hit_count: 0
+hosts:
+- host: https://groyyo.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+soft_404_control:
+  path: /.well-known/this-should-not-exist-control
+  status: 404
+  bytes: 4159
+  conclusion: host returns a true 404, not a catch-all 200

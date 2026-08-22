@@ -1,0 +1,39 @@
+generated: '2026-08-22'
+method: searched
+source: npm registry search, PyPI, RubyGems, crates.io, Packagist, GitHub org search (2026-08-22)
+note: >-
+  No first-party Groyyo client library exists on any public package registry.
+  npm registry search for "groyyo" returned 0 results; pypi.org/pypi/groyyo/json,
+  rubygems.org/api/v1/gems/groyyo.json and packagist.org all returned 404;
+  crates.io returned 403 to an unauthenticated crawler and no crate is listed.
+  github.com/groyyo is an ORGANIZATION OWNED BY A DIFFERENT COMPANY — it is named
+  "intent360" with blog www.intent360.co — so it is NOT wired as Groyyo's GitHub
+  organization; github.com/groyyo-new exists but has 0 public repositories and no
+  identifying metadata, so it cannot be attributed either. Groyyo's only publicly
+  distributed software is its Android app, which is a consumer install and not a
+  client library, so it is recorded here for the record and NOT as an SDK.
+  No SDKs pointer is emitted.
+package_count: 0
+packages: []
+mobile_apps:
+- platform: android
+  registry: google-play
+  name: Groyyo +
+  id: com.groyyo.plus
+  url: https://play.google.com/store/apps/details?id=com.groyyo.plus
+  developer: groyyo
+  official: true
+  version: null
+  published: null
+  note: >-
+    Google Play does not expose a machine-readable version/date endpoint to an
+    unauthenticated client; the listing was fetched (HTTP 200) and confirms the
+    publisher is "groyyo" and the declared privacy policy is
+    https://groyyo.com/privacy-policy. Version and release date not recorded
+    rather than guessed.
+registries_checked:
+- {registry: npm, query: groyyo, results: 0}
+- {registry: pypi, url: 'https://pypi.org/pypi/groyyo/json', status: 404}
+- {registry: rubygems, url: 'https://rubygems.org/api/v1/gems/groyyo.json', status: 404}
+- {registry: packagist, url: 'https://packagist.org/packages/groyyo/groyyo.json', status: 404}
+- {registry: crates.io, url: 'https://crates.io/api/v1/crates/groyyo', status: 403}

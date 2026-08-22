@@ -64,5 +64,21 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Groyyo is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Groyyo is a Gurugram, India based B2B manufacturing and supply-chain company for the
+fashion, apparel and lifestyle industry, founded in July 2021 by Subin Mitra and Pratik
+Tiwari. It matches global brands with a vetted network of small and mid-sized Asian
+factories and gives those factories production software — sales-order management,
+bill-of-materials creation, production tracking, quality control and business reporting —
+delivered as the Groyyo and Groyyo + mobile apps and an internal factory ERP.
+
+**Groyyo publishes no public API.** As of 2026-08-22 there is no developer portal, no API
+reference and no machine-readable contract (OpenAPI, AsyncAPI, GraphQL, MCP, gRPC or WSDL)
+on any host the company controls. `developer.groyyo.com`, `docs.groyyo.com` and
+`api.groyyo.com` all return 404, and every `/.well-known/` discovery path on `groyyo.com`
+returns a true 404 (verified against a bogus control path). This profile therefore records
+the company, its public pages and the measured absence — not an API.
+
+- https://groyyo.com/
+- https://groyyo.com/privacy-policy
+- https://groyyo.com/contact-us
+- https://play.google.com/store/apps/details?id=com.groyyo.plus
