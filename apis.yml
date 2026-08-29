@@ -10,6 +10,17 @@ description: 'Groyyo is a Gurugram, India based B2B manufacturing and supply-cha
   also runs sourcing, fabric and consulting lines, plus RFQ and supplier-KYC intake
   on its own website. As of August 2026 Groyyo publishes no developer portal, no API
   documentation and no machine-readable API contract on any host it controls.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://groyyo.com/images/logo-black.png
 url: https://raw.githubusercontent.com/api-evangelist/groyyo/refs/heads/main/apis.yml
 x-type: company
