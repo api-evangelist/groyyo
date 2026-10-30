@@ -64,21 +64,93 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Groyyo is a Gurugram, India based B2B manufacturing and supply-chain company for the
-fashion, apparel and lifestyle industry, founded in July 2021 by Subin Mitra and Pratik
-Tiwari. It matches global brands with a vetted network of small and mid-sized Asian
-factories and gives those factories production software — sales-order management,
-bill-of-materials creation, production tracking, quality control and business reporting —
-delivered as the Groyyo and Groyyo + mobile apps and an internal factory ERP.
+Groyyo is a Gurugram, India based B2B manufacturing and supply-chain company for the fashion, apparel and lifestyle industry, founded in July 2021 by Subin Mitra and Pratik Tiwari. It connects global brands with a vetted network of small and mid-sized Asian factories and gives those factories production software — sales-order management, bill-of-materials creation, production tracking, quality control and business reporting — delivered as the Groyyo and Groyyo + mobile apps and an internal factory ERP rather than as a public developer platform. The company also runs sourcing, fabric and consulting lines, plus RFQ and supplier-KYC intake on its own website. As of August 2026 Groyyo publishes no developer portal, no API documentation and no machine-readable API contract on any host it controls.
 
-**Groyyo publishes no public API.** As of 2026-08-22 there is no developer portal, no API
-reference and no machine-readable contract (OpenAPI, AsyncAPI, GraphQL, MCP, gRPC or WSDL)
-on any host the company controls. `developer.groyyo.com`, `docs.groyyo.com` and
-`api.groyyo.com` all return 404, and every `/.well-known/` discovery path on `groyyo.com`
-returns a true 404 (verified against a bogus control path). This profile therefore records
-the company, its public pages and the measured absence — not an API.
+**Areas:** Company · Manufacturing · Supply Chain · Apparel · Fashion · Sourcing · B2B · ERP · Quality Control · India
 
-- https://groyyo.com/
-- https://groyyo.com/privacy-policy
-- https://groyyo.com/contact-us
-- https://play.google.com/store/apps/details?id=com.groyyo.plus
+## Groyyo on APIs.io
+
+Everything profiled for Groyyo is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/groyyo/](https://apis.io/providers/groyyo/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Groyyo Domain Security](https://apis.io/security/groyyo/groyyo-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Groyyo Plans Pricing](https://apis.io/plans/groyyo/groyyo-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Groyyo Rate Limits](https://apis.io/rate-limits/groyyo/groyyo-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://groyyo.com/)
+- [Support](https://groyyo.com/contact-us)
+- [Privacy policy](https://groyyo.com/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 8.4** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 17.1 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/groyyo/](https://apis.io/providers/groyyo/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Groyyo: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/groyyo/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
